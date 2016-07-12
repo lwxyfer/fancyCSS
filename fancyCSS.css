@@ -50,7 +50,7 @@ section {
     transition: all 1s;
     animation: xyz;
 }
-.item {
+.checked-input {
     width: 50%;
     background: #FFF;
     position: relative;
@@ -63,7 +63,7 @@ section {
 .title:hover {
     border-bottom: 1px solid red;
 }
-.item input[type=checkbox] {
+.checked-input input[type=checkbox] {
     opacity: 0;
     position: absolute;
     top: 0;
@@ -73,28 +73,28 @@ section {
     z-index: 2;
     transition: all 3s;
 }
-.item .ico {
+.checked-input .ico {
     position: absolute;
     right: 5px;
     top: 5px;
     -webkit-transform: rotate(-90deg);
     transform: rotate(-90deg)
 }
-.item .ico::after {
+.checked-input .ico::after {
     content: '>';
 }
-.item input[type=checkbox]:checked+.ico {
+.checked-input input[type=checkbox]:checked+.ico {
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg)
 }
 input[type=checkbox]:checked~.content {
     display: none;
 }
-.attr {
+.hover-tooltip {
     position: relative;
     cursor: pointer;
 }
-.attr:hover:after {
+.hover-tooltip:hover:after {
     content: attr(date-tooltip);
     position: absolute;
     display: block;
