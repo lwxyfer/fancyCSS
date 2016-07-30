@@ -1,0 +1,24 @@
+/**
+ * hover to scale
+ */
+
+.hoverScale {
+    font-size: 60px;
+    text-align: center;
+}
+.hoverScale::after {
+    content: '';
+    display: block;
+    /*border-bottom: 4px solid red;*/
+    transform: scaleX(0);
+    height: 15px;
+    /*color: linear-gradient(to right, springgreen, red, springgreen);*/
+    background: linear-gradient(to right, springgreen, #009ad6, springgreen);
+    transition: all 0.5s;
+}
+.hoverScale:hover::after {
+    content: '';
+    width: 100%;
+    transform: scaleX(1.0);
+    transition: all 1s;
+}

@@ -19,3 +19,7 @@ use css to implement some fancy effects
  - http://codepen.io/rss/pen/KCnpm  
  - http://codepen.io/steftastan/pen/XbMVGw
  - http://codepen.io/bad_printer/pen/Einpz
+
+
+文档与演示要做好，那么就好了。  
+autofixer 修复兼容性的问题，在代码和文档里加入参考的项目的链接

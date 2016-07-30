@@ -1,0 +1,25 @@
+{
+  "name": "fancy-css",
+  "version": "1.0.0",
+  "description": "use css to implement some fancy effects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lwxyfer/fancyCSS.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lwxyfer/fancyCSS/issues"
+  },
+  "homepage": "https://github.com/lwxyfer/fancyCSS#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.12",
+    "gulp-concat": "^2.6.0",
+    "gulp-rename": "^1.2.2"
+  }
+}

@@ -1,0 +1,47 @@
+/**
+ * pokemon
+ */
+
+.color {
+    background: #f47920;
+}
+.pokemon {
+    box-sizing: border-box;
+    position: relative;
+    border-radius: 2rem;
+    z-index: 999;
+}
+.pokemon::before {
+    content: '';
+    position: absolute;
+    top: -10rem;
+    left: -8rem;
+    width: 20rem;
+    height: 10rem;
+    background: red;
+    border-bottom: 0.5rem solid #000;
+    border-top-left-radius: 20rem;
+    border-top-right-radius: 20rem;
+    z-index: -1
+}
+.pokemon::after {
+    content: '';
+    position: absolute;
+    bottom: -8rem;
+    left: -8rem;
+    width: 20rem;
+    height: 10rem;
+    background: #fff;
+    border-top: 0.5rem solid #000;
+    border-bottom-left-radius: 20rem;
+    border-bottom-right-radius: 20rem;
+    z-index: -1
+}
+.ball {
+    width: 5rem;
+    height: 5rem;
+    background: #fff;
+    border: 0.5rem solid #000;
+    border-radius: 5rem;
+    z-index: 999;
+}

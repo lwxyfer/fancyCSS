@@ -1,0 +1,174 @@
+/**
+ * overwatch
+ */
+
+.relativ {
+    position: absolute;
+    font-size: 96px;
+}
+.hexagon {
+    position: absolute;
+    width: 100px;
+    height: 57.74px;
+    background-color: #556c82;
+    margin: 10px 10px;
+}
+.hexcontainer {
+    width: 420px;
+    height: 420px;
+    position: relative;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 6px solid rgba(85, 108, 130, 0.11);
+}
+.hexcontainer::before {
+    content: '';
+    width: 420px;
+    height: 420px;
+    display: block;
+    position: absolute;
+    border: 11px solid #ffcd55;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    top: -10px;
+    left: -6px;
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+    -webkit-animation: 2s girarapido cubic-bezier(0.155, 1.105, 0.295, 1.12) infinite;
+    animation: 2s girarapido cubic-bezier(0.155, 1.105, 0.295, 1.12) infinite;
+}
+.hexbox {
+    position: relative;
+    margin: 75px 90px;
+    width: 285px;
+    height: 259px;
+}
+.hexagon:before, .hexagon:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+}
+.hexagon:before {
+    bottom: 100%;
+    border-bottom: 28.87px solid #556c82;
+}
+.hexagon:after {
+    top: 100%;
+    width: 0;
+    border-top: 28.87px solid #556c82;
+}
+.hexagon.hex_1 {
+    top: 0px;
+    left: 0px;
+    -webkit-animation: Animasearch 3s ease-in-out infinite;
+    animation: Animasearch 3s ease-in-out infinite;
+    -webkit-animation-delay: 0.21429s;
+    animation-delay: 0.21429s;
+}
+.hexagon.hex_2 {
+    top: 0px;
+    left: 102px;
+    -webkit-animation: Animasearch 3s ease-in-out infinite;
+    animation: Animasearch 3s ease-in-out infinite;
+    -webkit-animation-delay: 0.42857s;
+    animation-delay: 0.42857s;
+}
+.hexagon.hex_3 {
+    top: 87.74px;
+    left: 153px;
+    -webkit-animation: Animasearch 3s ease-in-out infinite;
+    animation: Animasearch 3s ease-in-out infinite;
+    -webkit-animation-delay: 0.64286s;
+    animation-delay: 0.64286s;
+}
+.hexagon.hex_4 {
+    top: 175px;
+    left: 102px;
+    -webkit-animation: Animasearch 3s ease-in-out infinite;
+    animation: Animasearch 3s ease-in-out infinite;
+    -webkit-animation-delay: 0.85714s;
+    animation-delay: 0.85714s;
+}
+.hexagon.hex_5 {
+    top: 175px;
+    left: 0px;
+    -webkit-animation: Animasearch 3s ease-in-out infinite;
+    animation: Animasearch 3s ease-in-out infinite;
+    -webkit-animation-delay: 1.07143s;
+    animation-delay: 1.07143s;
+}
+.hexagon.hex_6 {
+    top: 87.74px;
+    left: -51px;
+    -webkit-animation: Animasearch 3s ease-in-out infinite;
+    animation: Animasearch 3s ease-in-out infinite;
+    -webkit-animation-delay: 1.28571s;
+    animation-delay: 1.28571s;
+}
+.hexagon.hex_7 {
+    top: 87.74px;
+    left: 51px;
+    -webkit-animation: Animasearch 3s ease-in-out infinite;
+    animation: Animasearch 3s ease-in-out infinite;
+    -webkit-animation-delay: 1.5s;
+    animation-delay: 1.5s;
+}
+@-webkit-keyframes Animasearch {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+    }
+    15%, 50% {
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    65% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+@keyframes Animasearch {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+    }
+    15%, 50% {
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    65% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+@-webkit-keyframes girarapido {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes girarapido {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}

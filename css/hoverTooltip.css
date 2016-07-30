@@ -1,0 +1,28 @@
+/**
+ * hover tooltip
+ */
+
+.hover-tooltip {
+    position: relative;
+    cursor: pointer;
+}
+.hover-tooltip:hover:after {
+    content: attr(date-tooltip);
+    position: absolute;
+    display: block;
+    font-size: 2rem;
+    background: rgb(30, 236, 65);
+    border-radius: 0.5rem;
+    text-align: center;
+}
+.leftbottom:hover:after {
+    bottom: -3rem;
+    left: 0px;
+}
+.rightbottom:hover:after {
+    right: 0;
+}
+.lefttop:hover:after {
+    left: 0;
+    top: -3rem
+}
